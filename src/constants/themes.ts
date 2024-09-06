@@ -1,9 +1,9 @@
 import type { ToolbarTheme } from '../types';
 
 export const darkTheme: ToolbarTheme = {
-  background: '#1c1e21',
+  background: '#252525',
   color: '#ebedf0',
-  overlay: 'rgba(255, 255, 255, .15)',
+  //overlay: 'rgba(255, 255, 255, .15)',
   size: 30,
 };
 

@@ -71,6 +71,20 @@ body { overflow-y: hidden; -webkit-overflow-scrolling: touch;background-color: $
   color: ${placeholder};
 }
 
+.ql-editor {
+  display:flex;
+  align-items: center;
+  font-size: 25px;
+  word-wrap: anywhere;
+  flex-wrap: wrap;
+  align-content:center;
+  line-height 1;
+}
+
+.ql-editor p {
+  width: 100%
+}
+
 ${fontCss}
 
 

@@ -127,6 +127,12 @@ export const editor_js = `
     quill.root.dataset.placeholder = text;
   }
 
+    var updatePlaceholderAlignment = function() {
+    var align = quill.getFormat().align || 'left';
+    var editor = quill.root;
+    editor.style.textAlign = align;
+  };
+
   var updateContents = function (delta) {
     quill.updateContents(delta);
   }
@@ -316,6 +322,7 @@ export const editor_js = `
       }
     });
     sendMessage(getDimensionsJson);
+    updatePlaceholderAlignment();
   });
 
   quill.on('text-change', function(delta, oldDelta, source) {
@@ -361,6 +368,7 @@ export const editor_js = `
       }
     });
     sendMessage(getDimensionsJson);
+    updatePlaceholderAlignment();
   }, 250)
 
 })(document)
